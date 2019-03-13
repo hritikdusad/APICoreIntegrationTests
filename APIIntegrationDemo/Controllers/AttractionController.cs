@@ -1,17 +1,34 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using APIIntegrationDemo.Dto;
+using APIIntegrationDemo.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APIIntegrationDemo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class AttractionController : ControllerBase
     {
+        private readonly IAttractionService _service;
+
+        public AttractionController(IAttractionService service)
+        {
+            _service = service;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<AttractionDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var items = _service.GetTwoAttractions();
+
+            return items.Select(e => new AttractionDto
+            {
+                AttractionId = e.AttractionId,
+                Title = e.Title,
+                Description = e.Description
+            });
         }
 
         // GET api/values/5
