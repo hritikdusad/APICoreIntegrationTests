@@ -27,6 +27,8 @@ namespace ApiCoreIntegrationTest.Tests.Infrastructure
                     options.UseInternalServiceProvider(serviceProvider);
                 });
 
+                services.AddMvc(option => option.EnableEndpointRouting = false);
+
                 // Build the service provider.
                 var sp = services.BuildServiceProvider();
 
