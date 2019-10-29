@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIIntegrationDemo", "APIIntegrationDemo\APIIntegrationDemo.csproj", "{DF6C2CF4-AE6B-4954-8478-E56AAF045E67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIIntegrationDemo.Tests", "..\UnitTestProject1\APIIntegrationDemo.Tests.csproj", "{D45FEDD9-6E6C-4EDD-8416-B5E3BC9A970B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCoreIntegrationTest.Tests", "ApiCoreIntegrationTest.Tests\ApiCoreIntegrationTest.Tests.csproj", "{DAFEEBC5-C59D-42B8-B6C5-A9CB867E59C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DF6C2CF4-AE6B-4954-8478-E56AAF045E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6C2CF4-AE6B-4954-8478-E56AAF045E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6C2CF4-AE6B-4954-8478-E56AAF045E67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D45FEDD9-6E6C-4EDD-8416-B5E3BC9A970B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D45FEDD9-6E6C-4EDD-8416-B5E3BC9A970B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D45FEDD9-6E6C-4EDD-8416-B5E3BC9A970B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D45FEDD9-6E6C-4EDD-8416-B5E3BC9A970B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFEEBC5-C59D-42B8-B6C5-A9CB867E59C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFEEBC5-C59D-42B8-B6C5-A9CB867E59C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFEEBC5-C59D-42B8-B6C5-A9CB867E59C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFEEBC5-C59D-42B8-B6C5-A9CB867E59C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
